@@ -61,7 +61,11 @@ The framework encodes career guidance best practices, including structured evalu
 
 ## Prerequisites
 
+<<<<<<< HEAD
 - **An AI CLI**: OpenCode, Claude Code, Gemini CLI, Antigravity, or Codex. Thanks to the Universal Agent Architecture, all CLIs share the same workflow logic.
+=======
+- [Claude Code](https://claude.com/claude-code) (CLI). Claude Code has no free tier: you need a Claude Pro/Max/Team subscription or Anthropic API credits (pay-per-token, usually cheaper for occasional use). Using a different agent tool (Codex, Antigravity, Gemini CLI)? Start at [`AGENTS.md`](AGENTS.md) - the portal search skills work there out of the box, and [community forks](https://github.com/MadsLorentzen/ai-job-search/discussions/78) adapt the full workflow.
+>>>>>>> 27eb57a (docs(readme): say up front that Claude Code needs a paid plan or API credits (#456))
 - Python 3.10+
 - [Bun](https://bun.sh) (for job search CLI tools)
 - **Optional**: LaTeX distribution with `lualatex` and `xelatex` (e.g. [TeX Live](https://tug.org/texlive/), [MacTeX](https://tug.org/mactex/), or [MiKTeX](https://miktex.org/)). If you skip this, the AI will still generate the `.tex` source files, which you can easily compile online for free via [Overleaf](https://www.overleaf.com/). If installing locally, note that the CV compiles with `lualatex` and the cover letter compiles with `xelatex`.
