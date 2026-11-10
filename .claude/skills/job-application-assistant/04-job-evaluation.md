@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Backend Engineering (Golang, Ruby on Rails, PHP/Laravel, C#), Cloud & System Architecture (GCP), Systems Modernization, High-Scale Microservices, Database Migrations, Applied AI Integration, CI/CD & DevOps
+**Moderate match areas:** Modern Web Frontend (React.js), Data Analytics & BigQuery, Cloud Vision / OCR Pipelines
+**Weak match areas:** Native Mobile App Development (iOS Swift, Android Kotlin), Embedded Systems / Low-level Firmware, Deep ML Model Training from scratch
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Principal / Lead Software Engineer, Software Architect, Senior Backend Engineer, Cloud Solutions Architect
+**Moderate:** Engineering Manager, Technical Product / Delivery Lead, Full Stack Engineer
+**Entry-level:** Data Scientist / ML Researcher, Mobile Developer
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,10 +91,11 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+- Remote global / APAC: PASS
+- Local in Jakarta: PASS
+- Relocation with verified visa sponsorship (Europe, New Zealand, Australia, Middle East, Singapore, Japan): PASS
+- Relocation without visa sponsorship: FAIL (deal-breaker)
+- Relocation outside target regions: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -107,19 +108,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Target Principal Software Engineer, Software Architect, Staff Engineer, or Senior Backend roles in high-impact tech
+- Architect scalable, resilient distributed backends and integrate cutting-edge applied AI solutions
+- Lead technical vision, platform modernization, and system cost/performance optimization
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+- Tasks that energize: Cutting-edge technology, architecting high-scale distributed systems, applied AI integrations, cloud cost & performance optimization, engineering mentorship
+- Tasks that drain: Bureaucratic red tape, pure legacy maintenance with no modernization path, lack of technical autonomy
+- Non-task factors: High engineering culture, autonomy, outcome-focused leadership
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Relocation & Sponsorship**: For international roles requiring relocation, visa sponsorship is mandatory
+- **Flexibility**: Remote-friendly or clear relocation support to target markets (Europe, NZ, Australia, Middle East, Singapore, Japan)
+- **Professional development**: Continuous learning and leadership in cutting-edge tech and AI-assisted engineering
 
 ### 6. Salary Benchmark (Optional)
 

@@ -14,28 +14,47 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+## STAR Candidates (Complete Manually)
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. Cloud Storage Document Migration & Cost Optimization
+**Source:** LinkedIn export - INA Digital Edu (Software Architect)
+**What happened:** Migrated document files from RDBMS to cloud storage with zero downtime, reducing cloud utilization costs by over 50%.
+**Why it matters:** Answers questions on cost optimization, cloud architecture, high-availability migration, and technical leadership.
+**S/T/A/R stub:**
+- Situation: Large volumes of document files stored in RDBMS causing high cloud costs and scaling bottlenecks.
+- Task: Design and execute a migration to cloud storage without downtime or data corruption.
+- Action: Planned zero-downtime migration strategy, dual-write / sync pipeline, and cutover.
+- Result: Cloud utilization costs reduced by >50% with zero downtime.
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. AI-Powered Help Desk Research & Deployment
+**Source:** LinkedIn export - INA Digital Edu (Principal Software Development Engineer)
+**What happened:** Collaborated with the help desk team to research AI-powered help desk solutions, reaching a 71% correct answer rate.
+**Why it matters:** Answers questions on applied AI integration, cross-functional collaboration, customer support automation, and experimentation.
+**S/T/A/R stub:**
+- Situation: High support volume needing automated assistance and triage.
+- Task: Research and prototype an AI-powered conversational helpdesk solution.
+- Action: Partnered with support teams, built prototypes, and evaluated accuracy metrics.
+- Result: Achieved 71% correct answer rate on support queries.
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Paper Document Verification Automation with AI
+**Source:** LinkedIn export - INA Digital Edu (Software Architect)
+**What happened:** Collaborated with AI experts to automate paper document verification, cutting required human verification time and accelerating turnaround.
+**Why it matters:** Answers questions on AI/OCR workflows, automation, process efficiency, and technical partnership with AI researchers.
+**S/T/A/R stub:**
+- Situation: Manual paper document verification for education programs was labor-intensive and slow.
+- Task: Automate verification pipeline using AI/vision tools.
+- Action: Integrated AI services, designed automated verification pipeline and validation checks.
+- Result: Substantially reduced required manual manpower and boosted verification throughput.
+
+### 4. High-Scale Promotions & Payment Delivery for Singapore Grab Pay
+**Source:** LinkedIn export - Grab (Senior Software Engineer)
+**What happened:** Supported Singapore Grab Pay team in rolling out discount promotions and managing multi-project delivery under tight deadlines.
+**Why it matters:** Answers questions on high-scale fintech/payments, delivery under pressure, quality standards, and code review mentorship.
+**S/T/A/R stub:**
+- Situation: Grab Pay required reliable rollout of merchant and customer discount promotions across Singapore.
+- Task: Develop scalable payment / promotion features while managing multiple concurrent project streams.
+- Action: Applied agile methodologies, conducted thorough code reviews, and resolved complex technical bottlenecks.
+- Result: Increased merchant and customer adoption, met all launch deadlines reliably.
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 

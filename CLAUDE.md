@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Ibnul Qoyyim
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Ibnul Qoyyim, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +10,81 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Ibnul Qoyyim
+- **Location:** Jakarta Metropolitan Area, Indonesia (Remote global, or open to relocation with visa sponsorship)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | Indonesian | Native or Bilingual |
+  | Javanese | Native or Bilingual |
+  | English | Professional Working |
+  | Japanese | Elementary |
+  | German | Elementary |
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed (Principal Software Development Engineer at INA Digital Edu)
+- **LinkedIn headline:** "Principal Software Development Engineer at INA Digital Edu"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Bachelor of Engineering (B.E.) in Information Technology** (2004-2008) - Institut Teknologi Bandung (ITB)
+  - Topics: Information Technology, Computer Science & Distributed Systems
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Principal Software Development Engineer** (Oct 2023 - Present) - **INA Digital Edu** (Jakarta, Indonesia)
+  - Researched AI-powered help desk solutions with the help desk team, achieving a 71% correct answer rate
+  - Migrated MBKM platform into a shared GCP project with minimal disruption
+  - Architected migration strategies across Laravel versions and built reusable core libraries
+- **Software Architect** (Nov 2022 - Oct 2023) - **INA Digital Edu** (Jakarta, Indonesia)
+  - Partnered with AI experts to automate paper document verification, significantly reducing manual verification time
+  - Reduced cloud utilization costs by over 50% via zero-downtime document file migration from RDBMS to cloud storage
+  - Integrated BRI API into MBKM to verify LPDP scholarship recipient bank accounts
+- **Senior Software Developer** (Mar 2022 - Oct 2022) - **INA Digital Edu** (Jakarta, Indonesia)
+  - Designed payment approval systems; upgraded CI/CD pipelines and shifted branching to trunk-based development
+- **Senior Software Engineer** (Feb 2020 - Mar 2022) - **Grab** (Singapore / Jakarta)
+  - Supported Singapore Grab Pay promotion features, driving merchant and customer adoption
+  - Delivered scalable applications and maintained code review standards
+- **Senior Software Engineer** (Jun 2012 - Feb 2020) - **PT. Bukalapak.com** (Jakarta, Indonesia)
+  - Scaled backend services, web applications, and databases across high-growth e-commerce products
+- **Chief Technology Officer** (Oct 2014 - Apr 2015) - **HIJUP** (Jakarta, Indonesia)
+  - Directed engineering strategy and system architecture
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Golang, Ruby on Rails, PHP (Laravel), C#, GCP (Cloud Storage, AlloyDB, BigQuery), Distributed Systems Architecture, Applied AI Integrations, CI/CD
+- **Secondary:** React.js, JavaScript/TypeScript, Database Migrations (DB2, SQL Server, AlloyDB, PostgreSQL), ETL / IBM DataStage
+- **Domain:** Scaled E-Commerce, Fintech / Digital Payments (Grab Pay), GovTech / EdTech Platforms, Applied AI & Automation
+- **Software:** Git, GitHub, Docker, Google Cloud Platform, Linux, Trunk-based Development
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **Perform Predictive Data Analysis in BigQuery** - Google Cloud Skill Badge
+- **Developing Front-End Apps with React** - IBM / Coursera
+- **Analyze Images with the Cloud Vision API** - Google Cloud Skill Badge
+- **Introduction to Cloud Computing** - IBM
+- **Create and Manage AlloyDB Instances** - Google Cloud Skill Badge
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None listed yet
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- None listed yet
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Architectural Pragmatism & Modernization:** Proven track record in cost reduction (>50% cloud savings), zero-downtime migrations, and modernizing legacy stacks
+- **Applied AI Pioneer:** Drives practical AI adoption into operational pipelines (AI helpdesk, document verification)
+- **Strengths:** System architecture, cloud cost optimization, cross-functional engineering leadership, technical mentoring
+- **Growth areas:** T-shaped positioning as a pragmatic systems architect who selects the right tool for the scale
+- **Thrives in:** High-autonomy environments with challenging technical problems, platform scale, or cutting-edge tech adoption
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Cutting-edge technology, applied AI systems, large-scale distributed architecture, platform modernization, cost & performance optimization
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- **Global Scale-ups & Tech Platforms:** High-scale distributed systems, cloud infrastructure, cutting-edge software products
+- **Target Roles:** Principal Software Engineer, Software Architect, Staff Engineer, Backend Software Developer
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Rigid on-site without flexibility
+- Relocation without visa sponsorship (visa sponsorship required for Europe, New Zealand, Australia, Middle East, Singapore, Japan)
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

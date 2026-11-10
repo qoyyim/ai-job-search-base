@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Ibnul Qoyyim - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Ibnul}{Qoyyim}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Jakarta Metropolitan Area, Indonesia}{}{}
+\phone[mobile]{+6283830225553}
+\email{qoyyim@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/qoyyim}{LinkedIn}, \href{https://github.com/qoyyim}{GitHub}}
 
 \begin{document}
 \makecvtitle
@@ -137,11 +137,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Principal Software Engineer / Architect roles:**
+> Principal Software Engineer and Architect with 15+ years of experience designing and scaling resilient distributed systems across high-traffic platforms (Grab, Bukalapak) and national-scale GovTech (INA Digital Edu). Proven track record leading cloud migrations (cutting infrastructure costs by >50% with zero downtime), modernizing legacy codebases, and integrating applied AI automation into production workflows.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Senior Backend / Cloud Engineer roles:**
+> Senior Backend and Systems Engineer with deep expertise in Golang, Ruby on Rails, PHP/Laravel, and GCP cloud architecture. Specialized in high-throughput API design, database migrations, CI/CD modernization, and building reusable, maintainable libraries that accelerate product delivery.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

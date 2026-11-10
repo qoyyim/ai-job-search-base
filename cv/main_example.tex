@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Ibnul Qoyyim
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -11,11 +10,6 @@
 \moderncvcolor{blue}
 
 % Force the name and section headings to render in moderncv blue (color1).
-% Default banking leaves them black: moderncvstylebanking.sty's \colorlet
-% copies (not aliases) the pre-scheme accent colour, so the name colours are
-% frozen before \moderncvcolor runs. Re-let them after. \namefont is the hook
-% every name-style macro routes through, so this also works on moderncv 2.3.1
-% (Debian/Ubuntu apt), which has no \firstnamestyle/\lastnamestyle at all.
 \renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
 \colorlet{firstnamecolor}{color1}
 \colorlet{lastnamecolor}{color1}
@@ -23,40 +17,24 @@
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
-% pdflatex fallback only (the documented engine is lualatex, which skips this
-% branch). Without T1 font encoding pdflatex builds accented letters with
-% \accent, and the PDF text layer stores them decomposed - `e` + U+0300 rather
-% than U+00E8 - so an ATS keyword match on "Genève" fails while the page looks
-% right. moderncv 2.5 loads T1 itself under pdflatex; 2.3.1 (Debian/Ubuntu apt)
-% does not. \ifpdftex comes from iftex, which every moderncv version loads.
 \ifpdftex\usepackage[T1]{fontenc}\fi
-% moderncv loads hyperref itself in an \AtEndPreamble hook, so \hypersetup
-% must go in an \AtEndPreamble of our own: on moderncv < 2.4 a top-level
-% \usepackage{hyperref} clashes with the class's own
-% \RequirePackage[unicode]{hyperref}. From 2.4.0 the class passes its options
-% through \PassOptionsToPackage instead, which is what removes that clash.
 \AtEndPreamble{\hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
-    % Keep pdfpagemode=UseNone: this block runs after moderncv's own
-    % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
-    % value here would win and open every CV in fullscreen presentation mode.
+    pdftitle={Ibnul Qoyyim - CV},
     pdfpagemode=UseNone,
 }}
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Ibnul}{Qoyyim}
+\address{Jakarta Metropolitan Area, Indonesia}{}{}
+\phone[mobile]{+6283830225553}
+\email{qoyyim@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/qoyyim}{LinkedIn}, \href{https://github.com/qoyyim}{GitHub}}
 
 \begin{document}
 
@@ -67,7 +45,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Principal Software Engineer and Software Architect with 15+ years of experience engineering high-scale distributed systems, enterprise platforms, and cloud infrastructure across tier-1 tech (Grab, Bukalapak) and GovTech (INA Digital Edu). Proven track record leading zero-downtime cloud migrations cutting costs by over 50\%, architecting scalable APIs in Go, Ruby on Rails, and PHP/Laravel, and integrating applied AI automation into production services.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,15 +55,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{System Architecture \& Backend}: Distributed microservices, high-throughput APIs, Golang, Ruby on Rails, PHP (Laravel), C\#, event-driven design.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Cloud \& Infrastructure}: Google Cloud Platform (GCP), Cloud Storage, AlloyDB, BigQuery, cost optimization (>50\% cloud reduction), zero-downtime migration.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Applied AI \& Automation}: AI-powered conversational helpdesk integration (71\% accuracy), automated document verification pipelines, Cloud Vision API.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{DevOps \& Reliability}: CI/CD automation, trunk-based development, automated testing, system observability, database migrations (IBM DB2, MSSQL to AlloyDB/PostgreSQL).
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Frontend \& Web}: Modern web applications, React.js, JavaScript/TypeScript, RESTful API integration.
 
 \end{itemize}
 
@@ -97,32 +75,57 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- INA Digital Edu ---
+\item{\cventry{2023--Present}{Principal Software Development Engineer}{INA Digital Edu}{Jakarta, Indonesia}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item {Collaborated with support teams to research and deploy AI-powered help desk solutions, achieving a 71\% correct answer rate.}
+    \item {Migrated MBKM Platform into a Shared GCP Project with minimal service disruption and enhanced operational observability.}
+    \item {Formulated migration strategies bridging legacy Laravel 5.10 applications to modern releases, reducing framework update friction.}
+    \item {Developed reusable core libraries for the MBKM platform to standardize development across engineering teams.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2022--2023}{Software Architect}{INA Digital Edu}{Jakarta, Indonesia}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item {Partnered with AI specialists to build automated paper document verification, drastically accelerating verification speed and cutting manual processing time.}
+    \item {Reduced cloud infrastructure costs by over 50\% through a zero-downtime migration of document storage from RDBMS to cloud storage.}
+    \item {Integrated BRI banking APIs within MBKM to securely verify bank accounts for LPDP scholarship recipients.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2022}{Senior Software Developer}{INA Digital Edu}{Jakarta, Indonesia}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item {Designed and deployed payment approval workflows for internship students.}
+    \item {Upgraded CI/CD pipelines and transitioned source code branching from Gitflow to trunk-based development.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Grab ---
+\item{\cventry{2020--2022}{Senior Software Engineer}{Grab}{Singapore / Jakarta}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Supported the Singapore Grab Pay engineering team in launching customer and merchant discount promotions.}
+    \item {Engineered high-scale, reliable payment and transaction services using agile delivery practices under strict deadlines.}
+    \item {Conducted comprehensive code reviews and technical mentoring to uphold engineering standards and code quality.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Bukalapak ---
+\item{\cventry{2012--2020}{Senior Software Engineer}{PT. Bukalapak.com}{Jakarta, Indonesia}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Engineered and scaled core e-commerce backend services, supporting rapid multi-year traffic and user transaction growth.}
+    \item {Architected high-throughput Ruby on Rails and Go microservices across core marketplace workflows.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- HIJUP ---
+\item{\cventry{2014--2015}{Chief Technology Officer}{HIJUP}{Jakarta, Indonesia}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Directed technology roadmap, infrastructure scaling, and development practices as CTO.}
 \end{itemize}}}
 
 \end{itemize}
@@ -135,14 +138,8 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
-
-\vspace{3pt}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2004--2008}{Bachelor of Engineering (B.E.) in Information Technology}{Institut Teknologi Bandung (ITB)}{Bandung, Indonesia}{}{\vspace{1pt}
+Core Focus: Computer Science, Software Engineering, Systems \& Database Management.
 }}
 
 \end{itemize}
@@ -154,27 +151,21 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item {Indonesian (Native), Javanese (Native), English (Professional Working), Japanese (Elementary), German (Elementary).}
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
+%     CERTIFICATIONS
 % ============================================================
 
-\section{Publications}
+\section{Certifications}
 \vspace{1pt}
 \begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item {Perform Predictive Data Analysis in BigQuery (Google Cloud Skill Badge)}
+\item {Developing Front-End Apps with React (IBM)}
+\item {Analyze Images with the Cloud Vision API (Google Cloud Skill Badge)}
+\item {Create and Manage AlloyDB Instances (Google Cloud Skill Badge)}
+\item {Introduction to Cloud Computing (IBM)}
 \end{itemize}
 
 % ============================================================
