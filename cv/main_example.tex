@@ -31,7 +31,7 @@
 
 % personal data
 \name{Ibnul}{Qoyyim}
-\address{Jakarta Metropolitan Area, Indonesia}{}{}
+\address{Surabaya, Indonesia}{}{}
 \phone[mobile]{+6283830225553}
 \email{qoyyim@gmail.com}
 \extrainfo{\href{https://www.linkedin.com/in/qoyyim}{LinkedIn}, \href{https://github.com/qoyyim}{GitHub}}
@@ -45,7 +45,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{Principal Software Engineer and Software Architect with 15+ years of experience engineering high-scale distributed systems, enterprise platforms, and cloud infrastructure across tier-1 tech (Grab, Bukalapak) and GovTech (INA Digital Edu). Proven track record leading zero-downtime cloud migrations cutting costs by over 50\%, architecting scalable APIs in Go, Ruby on Rails, and PHP/Laravel, and integrating applied AI automation into production services.}
+\small{Principal Software Engineer and Software Architect with 15+ years of experience engineering high-scale distributed systems, enterprise platforms, and cloud infrastructure across tier-1 tech (Grab, Bukalapak) and GovTech (INA Digital Edu). Proven track record leading zero-downtime cloud migrations cutting costs by over 50\%, architecting scalable APIs in Go, Ruby on Rails, and PHP/Laravel, and integrating applied AI automation into production services. Deep expertise in Go (Golang), Ruby on Rails, Redis distributed locking, Apache Kafka, and GCP/AWS infrastructure, handling peak traffic of 10,000--50,000+ RPS and processing billions of transactional records. Proven track record delivering payment integrations, KYC platforms, and zero-downtime cloud migrations across e-commerce, fintech, and GovTech.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -56,13 +56,17 @@
 \begin{itemize}
 
 \item \textbf{System Architecture \& Backend}: Distributed microservices, high-throughput APIs, Golang, Ruby on Rails, PHP (Laravel), C\#, event-driven design.
+\item \textbf{Languages}: Go (Golang), Ruby, PHP, SQL, Bash.
 
-\item \textbf{Cloud \& Infrastructure}: Google Cloud Platform (GCP), Cloud Storage, AlloyDB, BigQuery, cost optimization (>50\% cloud reduction), zero-downtime migration.
+\item \textbf{Cloud \& Infrastructure}: Google Cloud Platform (GCP), Amazon Web Services (AWS), Docker, CI/CD, traffic mirroring (GCLB), Nginx, Cloud Storage, AlloyDB, BigQuery, cost optimization (>50\% cloud reduction), zero-downtime migration.
+\item \textbf{Distributed Systems}: Apache Kafka, Redis (distributed locks, caching), gRPC, microservices, high-throughput backend design.
 
+\item \textbf{Databases}: PostgreSQL, MySQL, MongoDB, multi-tenant schema and indexing optimization.
 \item \textbf{Applied AI \& Automation}: AI-powered conversational helpdesk integration (71\% accuracy), automated document verification pipelines, Cloud Vision API.
 
 \item \textbf{DevOps \& Reliability}: CI/CD automation, trunk-based development, automated testing, system observability, database migrations (IBM DB2, MSSQL to AlloyDB/PostgreSQL).
 
+\item \textbf{Domains}: Payment gateway integration, KYC/identity verification, voucher platforms, ERP systems, GovTech digital services, zero-downtime migration.
 \item \textbf{Frontend \& Web}: Modern web applications, React.js, JavaScript/TypeScript, RESTful API integration.
 
 \end{itemize}
@@ -78,6 +82,10 @@
 % --- INA Digital Edu ---
 \item{\cventry{2023--Present}{Principal Software Development Engineer}{INA Digital Edu}{Jakarta, Indonesia}{}{\vspace{1pt}
 \begin{itemize}
+    \item Built Go backend services for Ruang Murid, serving 100+ pilot schools and scaling to 20+ live schools.
+    \item Led zero-downtime migration via GCLB traffic mirroring between legacy and upgraded Laravel platforms.
+    \item Consolidated infrastructure into a Shared GCP Project, reducing system overhead while retaining high availability.
+    \item Integrated BRI Banking API for LPDP disbursements, automating account and identity verification workflows.
     \item {Collaborated with support teams to research and deploy AI-powered help desk solutions, achieving a 71\% correct answer rate.}
     \item {Migrated MBKM Platform into a Shared GCP Project with minimal service disruption and enhanced operational observability.}
     \item {Formulated migration strategies bridging legacy Laravel 5.10 applications to modern releases, reducing framework update friction.}
@@ -88,6 +96,9 @@
 
 \item{\cventry{2022--2023}{Software Architect}{INA Digital Edu}{Jakarta, Indonesia}{}{\vspace{1pt}
 \begin{itemize}
+    \item Cut cloud costs by 50\%+ with zero downtime, migrating assets from PostgreSQL to Google Cloud Storage (GCS).
+    \item Established distributed high-availability architecture standards across large-scale government applications.
+    \item Optimized multi-tenant schemas and indexing strategies, significantly decreasing overall API response latency.
     \item {Partnered with AI specialists to build automated paper document verification, drastically accelerating verification speed and cutting manual processing time.}
     \item {Reduced cloud infrastructure costs by over 50\% through a zero-downtime migration of document storage from RDBMS to cloud storage.}
     \item {Integrated BRI banking APIs within MBKM to securely verify bank accounts for LPDP scholarship recipients.}
@@ -105,7 +116,11 @@
 
 % --- Grab ---
 \item{\cventry{2020--2022}{Senior Software Engineer}{Grab}{Singapore / Jakarta}{}{\vspace{1pt}
+
 \begin{itemize}
+    \item Engineered high-throughput Go microservices for the KYC identity verification platform.
+    \item Scaled backend promotion engines for GrabPay Singapore, expanding merchant partner integrations.
+    \item Authored RFCs and modernized airtime top-up systems with Apache Kafka for async multi-provider streaming.
     \item {Supported the Singapore Grab Pay engineering team in launching customer and merchant discount promotions.}
     \item {Engineered high-scale, reliable payment and transaction services using agile delivery practices under strict deadlines.}
     \item {Conducted comprehensive code reviews and technical mentoring to uphold engineering standards and code quality.}
@@ -116,8 +131,9 @@
 % --- Bukalapak ---
 \item{\cventry{2012--2020}{Senior Software Engineer}{PT. Bukalapak.com}{Jakarta, Indonesia}{}{\vspace{1pt}
 \begin{itemize}
-    \item {Engineered and scaled core e-commerce backend services, supporting rapid multi-year traffic and user transaction growth.}
-    \item {Architected high-throughput Ruby on Rails and Go microservices across core marketplace workflows.}
+    \item Built Redis distributed locks to handle 10k--50k+ RPS Flash Sale bursts, resolving Nginx pool saturation.
+    \item Built core Voucher platform in Ruby on Rails and refactored it into microservices processing billions of vouchers.
+    \item Integrated payment gateways: Mandiri ClickPay, Doku Wallet, and Indomaret retail sync.
 \end{itemize}}}
 
 \vspace{3pt}
@@ -125,6 +141,8 @@
 % --- HIJUP ---
 \item{\cventry{2014--2015}{Chief Technology Officer}{HIJUP}{Jakarta, Indonesia}{}{\vspace{1pt}
 \begin{itemize}
+    \item Led full cloud migration to AWS, cutting server maintenance effort by 60\% and enabling auto-scaling.
+    \item Architected ERP system unifying POS, warehouse management, and inventory sync using MySQL and MongoDB.
     \item {Directed technology roadmap, infrastructure scaling, and development practices as CTO.}
 \end{itemize}}}
 
@@ -138,8 +156,9 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{2004--2008}{Bachelor of Engineering (B.E.) in Information Technology}{Institut Teknologi Bandung (ITB)}{Bandung, Indonesia}{}{\vspace{1pt}
+\item{\cventry{2004--2008}{Bachelor of Engineering (B.E.) in Computer Science / Information Technology}{Institut Teknologi Bandung (ITB)}{Bandung, Indonesia}{}{\vspace{1pt}
 Core Focus: Computer Science, Software Engineering, Systems \& Database Management.
+Thesis: ``Implementation of Elliptic Curve Cryptography in Email Client Mozilla Thunderbird.''
 }}
 
 \end{itemize}

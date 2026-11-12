@@ -60,8 +60,8 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** Backend Engineering (Golang, Ruby on Rails, PHP/Laravel, C#), Cloud & System Architecture (GCP), Systems Modernization, High-Scale Microservices, Database Migrations, Applied AI Integration, CI/CD & DevOps
-**Moderate match areas:** Modern Web Frontend (React.js), Data Analytics & BigQuery, Cloud Vision / OCR Pipelines
+**Strong match areas:** Backend Engineering (Go (Golang), Ruby on Rails, PHP/Laravel, C#), Cloud & System Architecture (GCP), Systems Modernization, High-Scale Microservices, Database Migrations, high-throughput backend architecture, microservices, Redis distributed locking, Apache Kafka, cloud architecture (GCP/AWS), payment gateway integration, zero-downtime migration, CI/CD & DevOps
+**Moderate match areas:** PHP/Laravel, Modern Web Frontend (React.js), Data Analytics & BigQuery, Applied AI Integration, Cloud Vision / OCR Pipelines
 **Weak match areas:** Native Mobile App Development (iOS Swift, Android Kotlin), Embedded Systems / Low-level Firmware, Deep ML Model Training from scratch
 
 ### 2. Experience Match (0-100)
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** Principal / Lead Software Engineer, Software Architect, Senior Backend Engineer, Cloud Solutions Architect
-**Moderate:** Engineering Manager, Technical Product / Delivery Lead, Full Stack Engineer
-**Entry-level:** Data Scientist / ML Researcher, Mobile Developer
+**Strong:** Principal / Lead Software Engineer, Software Architect, Senior Backend Engineer, Cloud Solutions ArchitectBackend engineering, distributed systems, high-throughput platforms, cloud architecture, payment integrations, GovTech/public sector digital services, e-commerce platforms
+**Moderate:** Solutions architecture, DevOps/cloud engineering, technical leadership (CTO experience), system migration projects
+**Entry-level:** Frontend/web development, data engineering / Scientist / ML Researcher, mobile development, pure DevOps/SRE (no dedicated SRE role)
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -92,9 +92,8 @@ Does the role and company culture match the behavioral profile?
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
 - Remote global / APAC: PASS
-- Local in Jakarta: PASS
-- Relocation with verified visa sponsorship (Europe, New Zealand, Australia, Middle East, Singapore, Japan): PASS
-- Relocation without visa sponsorship: FAIL (deal-breaker)
+- Requires relocation WITH visa sponsorship (Europe, New Zealand, Middle East, Australia, Japan, Singapore): PASS (acceptable)
+- Relocation WITHOUT visa sponsorship: FAIL (deal-breaker)
 - Relocation outside target regions: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
@@ -108,19 +107,20 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- Target Principal Software Engineer, Software Architect, Staff Engineer, or Senior Backend roles in high-impact tech
-- Architect scalable, resilient distributed backends and integrate cutting-edge applied AI solutions
-- Lead technical vision, platform modernization, and system cost/performance optimization
+- Secure a backend/architecture role with visa sponsorship or full remote (Europe, NZ, Middle East, Australia, Japan, Singapore)
+- Grow from senior IC toward Staff/Principal Engineer or Solutions Architect
+- Work on high-impact distributed systems with strong work-life balance
+- Leverage Go/Ruby/cloud expertise in international markets
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: Cutting-edge technology, architecting high-scale distributed systems, applied AI integrations, cloud cost & performance optimization, engineering mentorship
-- Tasks that drain: Bureaucratic red tape, pure legacy maintenance with no modernization path, lack of technical autonomy
-- Non-task factors: High engineering culture, autonomy, outcome-focused leadership
+- Tasks that energize: Cutting-edge technology, distributed system design, cloud architecture, high-throughput backend engineering, creative problem solving, end-to-end ownership, payment/platform integrations
+- Tasks that drain: excessive context switching, meeting-heavy collaboration, Bureaucratic red tape, maintenance-only work, on-call-heavy operations
+- Non-task factors: leadership style, degree of autonomy, remote/hybrid flexibility, visa sponsorship
 
 **Life situation alignment:** Consider personal constraints:
 - **Relocation & Sponsorship**: For international roles requiring relocation, visa sponsorship is mandatory
 - **Flexibility**: Remote-friendly or clear relocation support to target markets (Europe, NZ, Australia, Middle East, Singapore, Japan)
-- **Professional development**: Continuous learning and leadership in cutting-edge tech and AI-assisted engineering
+- **Professional development**: Growth toward Staff/Principal/Architect roles; continued cloud and distributed systems depth; Continuous learning and leadership in cutting-edge tech and AI-assisted engineering
 
 ### 6. Salary Benchmark (Optional)
 

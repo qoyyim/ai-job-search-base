@@ -12,7 +12,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Identity
 - **Name:** Ibnul Qoyyim
-- **Location:** Jakarta Metropolitan Area, Indonesia (Remote global, or open to relocation with visa sponsorship)
+- **Location:** Surabaya, Indonesia (Remote global, or open to relocation with visa sponsorship)
 - **Languages:**
   | Language | Level |
   |----------|-------|
@@ -27,33 +27,47 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **LinkedIn headline:** "Principal Software Development Engineer at INA Digital Edu"
 
 ### Education
-- **Bachelor of Engineering (B.E.) in Information Technology** (2004-2008) - Institut Teknologi Bandung (ITB)
-  - Topics: Information Technology, Computer Science & Distributed Systems
+- **Bachelor of Engineering (B.E.) in Computer Science / Information Technology** (2004-2008) - Institut Teknologi Bandung
+  - Thesis: "Implementation of Elliptic Curve Cryptography in Mail Client Mozilla Thunderbird"
+  - Topics: Computer Science, Information Technology, Cryptography
 
 ### Professional Experience
-- **Principal Software Development Engineer** (Oct 2023 - Present) - **INA Digital Edu** (Jakarta, Indonesia)
+- **Principal Software Development Engineer** (Oct 2023 - Present) - **INA Digital Edu** (Jakarta, Indonesia, Hybrid)
+  - Built Go backend services for Ruang Murid, serving 100+ pilot schools and scaling to 20+ live schools.
+  - Led zero-downtime migration via GCLB traffic mirroring between legacy and upgraded Laravel platforms.
+  - Consolidated infrastructure into a Shared GCP Project, reducing system overhead while retaining high availability.
+  - Integrated BRI Banking API for LPDP disbursements, automating account and identity verification workflows.
   - Researched AI-powered help desk solutions with the help desk team, achieving a 71% correct answer rate
   - Migrated MBKM platform into a shared GCP project with minimal disruption
   - Architected migration strategies across Laravel versions and built reusable core libraries
-- **Software Architect** (Nov 2022 - Oct 2023) - **INA Digital Edu** (Jakarta, Indonesia)
+- **Software Architect** (Nov 2022 - Oct 2023) - **INA Digital Edu** (Jakarta, Indonesia, Remote)
+  - Cut cloud costs by 50%+ with zero downtime, migrating assets from PostgreSQL to Google Cloud Storage (GCS).
+  - Established distributed high-availability architecture standards across large-scale government applications.
+  - Optimized multi-tenant schemas and indexing strategies, significantly decreasing overall API response latency.
   - Partnered with AI experts to automate paper document verification, significantly reducing manual verification time
   - Reduced cloud utilization costs by over 50% via zero-downtime document file migration from RDBMS to cloud storage
   - Integrated BRI API into MBKM to verify LPDP scholarship recipient bank accounts
-- **Senior Software Developer** (Mar 2022 - Oct 2022) - **INA Digital Edu** (Jakarta, Indonesia)
+- **Senior Software Developer** (Mar 2022 - Oct 2022) - **INA Digital Edu** (Jakarta, Indonesia, Remote)
   - Designed payment approval systems; upgraded CI/CD pipelines and shifted branching to trunk-based development
-- **Senior Software Engineer** (Feb 2020 - Mar 2022) - **Grab** (Singapore / Jakarta)
-  - Supported Singapore Grab Pay promotion features, driving merchant and customer adoption
-  - Delivered scalable applications and maintained code review standards
+- **Senior Software Engineer** (Feb 2020 - Mar 2022) - **Grab** (Hybrid - Singapore / Jakarta)
+  - Engineered high-throughput Go microservices for the KYC identity verification platform in an Agile setup.
+  - Scaled backend promotion engines for GrabPay Singapore, expanding merchant partner integrations and adoption.
+  - Authored RFCs and modernized airtime top-up systems with Apache Kafka for async multi-provider streaming.
 - **Senior Software Engineer** (Jun 2012 - Feb 2020) - **PT. Bukalapak.com** (Jakarta, Indonesia)
+  - Built Redis distributed locks to handle 10k–50k+ RPS Flash Sale bursts, resolving Nginx pool saturation.
+  - Built core Voucher platform in Ruby on Rails and refactored it into microservices processing billions of vouchers.
+  - Integrated major national payment gateways including Mandiri ClickPay, Doku Wallet, and Indomaret retail sync.
   - Scaled backend services, web applications, and databases across high-growth e-commerce products
 - **Chief Technology Officer** (Oct 2014 - Apr 2015) - **HIJUP** (Jakarta, Indonesia)
+  - Led full cloud migration to AWS, cutting server maintenance effort by 60% and enabling auto-scaling.
+  - Architected ERP system unifying POS, warehouse management, and inventory sync using MySQL and MongoDB.
   - Directed engineering strategy and system architecture
 
 ### Technical Skills
-- **Primary:** Golang, Ruby on Rails, PHP (Laravel), C#, GCP (Cloud Storage, AlloyDB, BigQuery), Distributed Systems Architecture, Applied AI Integrations, CI/CD
-- **Secondary:** React.js, JavaScript/TypeScript, Database Migrations (DB2, SQL Server, AlloyDB, PostgreSQL), ETL / IBM DataStage
-- **Domain:** Scaled E-Commerce, Fintech / Digital Payments (Grab Pay), GovTech / EdTech Platforms, Applied AI & Automation
-- **Software:** Git, GitHub, Docker, Google Cloud Platform, Linux, Trunk-based Development
+- **Primary:** Golang, Ruby on Rails, PHP (Laravel), C#, GCP (Cloud Storage, BigQuery), Distributed Systems Architecture, Applied AI Integrations, CI/CD
+- **Secondary:** React.js, JavaScript/TypeScript, Database Migrations (DB2, SQL Server, PostgreSQL), ETL / IBM DataStage
+- **Domain:** Scaled E-Commerce, Fintech / Digital Payments (Grab Pay), GovTech / EdTech Platforms, Applied AI & Automation, Distributed systems, high-throughput backend architecture, microservices, real-time event pipelines, cloud backend architecture, payment gateway integration, multi-tenant schemas
+- **Software:** Apache Kafka, Redis (distributed locks, caching), PostgreSQL, MySQL, MongoDB, gRPC, Google Cloud Platform (GCP), Amazon Web Services (AWS), Docker, Nginx, Laravel, Ruby on Rails, CI/CD, Traffic Mirroring, Git, GitHub, Docker, Google Cloud Platform, Linux, Trunk-based Development
 
 ### Certifications
 - **Perform Predictive Data Analysis in BigQuery** - Google Cloud Skill Badge
@@ -63,27 +77,40 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **Create and Manage AlloyDB Instances** - Google Cloud Skill Badge
 
 ### Publications
+<!-- None listed -->
 - None listed yet
 
 ### Awards
+<!-- None listed -->
 - None listed yet
 
 ### Behavioral Profile
+- **Creative & proud of work** - Thrives in environments where he can be creative and take pride in his output
+- **Drains:** Context switching, too many useless meetings
+- **Decision style:** Tends toward quick decisions but is consciously becoming more deliberate after past missteps
+- **Communication:** Direct but polite
+- **Strengths:** System architecture, cloud cost optimization, cross-functional engineering leadership, technical mentoring, Creative problem solving, ownership, direct communication
+- **Growth areas:** T-shaped positioning as a pragmatic systems architect who selects the right tool for the scale, Deliberation in high-stakes decisions; protecting focus time
+- **Thrives in:** Autonomous work with clear ownership, minimal unnecessary meetings, creative problem solving, High-autonomy environments with challenging technical problems, platform scale, or cutting-edge tech adoption
 - **Architectural Pragmatism & Modernization:** Proven track record in cost reduction (>50% cloud savings), zero-downtime migrations, and modernizing legacy stacks
 - **Applied AI Pioneer:** Drives practical AI adoption into operational pipelines (AI helpdesk, document verification)
-- **Strengths:** System architecture, cloud cost optimization, cross-functional engineering leadership, technical mentoring
-- **Growth areas:** T-shaped positioning as a pragmatic systems architect who selects the right tool for the scale
-- **Thrives in:** High-autonomy environments with challenging technical problems, platform scale, or cutting-edge tech adoption
 
 ### What Excites You
-- Cutting-edge technology, applied AI systems, large-scale distributed architecture, platform modernization, cost & performance optimization
+- Work-life balance
+- Creative, high-impact engineering work
+- Cutting-edge technology, applied AI systems
 
 ### Target Sectors
 - **Global Scale-ups & Tech Platforms:** High-scale distributed systems, cloud infrastructure, cutting-edge software products
 - **Target Roles:** Principal Software Engineer, Software Architect, Staff Engineer, Backend Software Developer
+- Tech companies (backend/platform): Grab, Bukalapak, GoTo, regional and global
+- GovTech / government digital services
+- e-commerce
+- Cloud/SaaS and infrastructure providers
+- International roles with visa sponsorship (Europe, New Zealand, Middle East, Australia, Japan, Singapore)
 
 ### Deal-breakers
-- Rigid on-site without flexibility
+- Avoid roles with heavy context switching or excessive meetings
 - Relocation without visa sponsorship (visa sponsorship required for Europe, New Zealand, Australia, Middle East, Singapore, Japan)
 
 ## Repo Structure
