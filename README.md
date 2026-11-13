@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  An AI-powered job application framework built on <a href="https://claude.com/claude-code">Claude Code</a>.<br>
+  An AI-powered job application framework built on <a href="https://claude.com/claude-code">Claude Code</a>, with additive [OpenCode](https://opencode.ai) compatibility.<br>
   Fork it, fill in your profile, and let Claude evaluate job postings, tailor your CV,<br>
   write cover letters, and prepare you for interviews.
 </p>
@@ -62,7 +62,7 @@ Sixty-nine tailored applications, twenty first interviews, and one signed contra
 
 ## What this is
 
-A structured workflow that turns Claude Code into a full-stack job application assistant. Six commands carry you from an empty profile to a tracked result:
+A structured workflow that turns Claude Code or OpenCode into a full-stack job application assistant. Six commands carry you from an empty profile to a tracked result:
 
 <p align="center">
   <img src="assets/readme/route.svg" alt="The workflow in order: /setup builds your profile, /scrape finds new postings, /rank shortlists the fits, /apply tailors a CV and cover letter, /interview preps every round, /outcome tracks each result." width="100%">
@@ -80,7 +80,7 @@ The framework encodes career guidance best practices, including structured evalu
 
 | | |
 |---|---|
-| **[Claude Code](https://claude.com/claude-code)** | The CLI. No free tier: a Claude Pro/Max/Team subscription or Anthropic API credits (pay-per-token, usually cheaper for occasional use). |
+| **[Claude Code](https://claude.com/claude-code)** or [OpenCode](https://opencode.ai) | The CLI. No free tier: a Claude Pro/Max/Team subscription or Anthropic API credits (pay-per-token, usually cheaper for occasional use). |
 | **Python 3.10+** | For the tools in `tools/`. |
 | **[Bun](https://bun.sh)** | Runs the job search CLI tools. |
 | **LaTeX** | A distribution with `lualatex` and `xelatex`: [TeX Live](https://tug.org/texlive/), [MacTeX](https://tug.org/mactex/), [TinyTeX](https://yihui.org/tinytex/), or [MiKTeX](https://miktex.org/). |
@@ -123,6 +123,19 @@ cd ai-job-search
 
 ### 2. Install job search tools
 
+PowerShell:
+
+```powershell
+$tools = @("jobbank-search", "jobdanmark-search", "jobindex-search", "jobnet-search", "linkedin-search", "freehire-search")
+foreach ($tool in $tools) {
+  Set-Location ".agents/skills/$tool/cli"
+  bun install
+  Set-Location "..\..\..\.."
+}
+```
+
+Bash / zsh / Git Bash:
+
 ```bash
 python3 tools/install_portal_clis.py   # Windows: python tools\install_portal_clis.py
 ```
@@ -138,9 +151,17 @@ For `linkedin-search` and `freehire-search` the install is optional: both have z
 
 ### 3. Set up your profile
 
+Claude Code:
 ```bash
 claude
 # Then inside Claude Code:
+/setup
+```
+
+OpenCode:
+```bash
+opencode
+# Then inside OpenCode:
 /setup
 ```
 
@@ -152,7 +173,7 @@ claude
 /scrape
 ```
 
-This searches multiple job portals for positions matching your profile, deduplicates results, and presents them sorted by fit. Pick a match to run `/apply` on it directly — or, when a scrape returns more jobs than you want to eyeball, run `/rank` to batch-score them all against the fit framework and get a ranked shortlist first.
+The command works the same way in OpenCode. This searches multiple job portals for positions matching your profile, deduplicates results, and presents them sorted by fit. Pick a match to run `/apply` on it directly — or, when a scrape returns more jobs than you want to eyeball, run `/rank` to batch-score them all against the fit framework and get a ranked shortlist first.
 
 ### 5. Apply to a job
 
@@ -166,14 +187,16 @@ If the URL can't be fetched (some job portals block automated access), you can p
 /apply <paste the full job description here>
 ```
 
-This runs the full workflow: evaluate fit, draft CV + cover letter, review with a second agent, revise, and present the final output. The posting passes a deterministic integrity gate first (hidden text, invisible characters, instruction-shaped lines, hidden links), and its one-line verdict opens the evaluation; the agents that fetch and review read-only.
+The command works the same way in OpenCode. This runs the full workflow: evaluate fit, draft CV + cover letter, review with a second agent, revise, and present the final output.
+
+The posting passes a deterministic integrity gate first (hidden text, invisible characters, instruction-shaped lines, hidden links), and its one-line verdict opens the evaluation; the agents that fetch and review read-only.
 
 > [!WARNING]
 > Postings are treated as untrusted input (the workflow follows no instructions embedded in them and fetches no links from their body), but agentic defenses are instruction-level, not a sandbox - on an unfamiliar job board, skim what was fetched and written before you hit send. Details in [SECURITY.md](SECURITY.md).
 
 ## Commands
 
-`/setup`, `/scrape`, and `/apply` form the core workflow. Ten more commands extend it once your profile is in place.
+`/setup`, `/scrape`, and `/apply` form the core workflow. Ten more commands extend it once your profile is in place. All commands work identically in OpenCode — the same `/command` syntax loads the same workflow files.
 
 | Command | What it does |
 |---|---|
@@ -208,6 +231,76 @@ This runs the full workflow: evaluate fit, draft CV + cover letter, review with 
 
 </details>
 
+## File structure
+
+```
+ai-job-search/
+├── CLAUDE.md                          # Main candidate profile + workflow rules
+├── .claude/
+│   ├── commands/
+│   │   ├── apply.md                   # /apply workflow (drafter-reviewer)
+│   │   ├── setup.md                   # /setup onboarding (documents folder, CV import, or interview)
+│   │   ├── expand.md                  # /expand competency enrichment from documents and online presence
+│   │   ├── add-template.md            # /add-template register custom templates (LaTeX, Typst, ...)
+│   │   ├── add-portal.md              # /add-portal generate a job-portal search skill for your market
+│   │   ├── rank.md                    # /rank triage scraped jobs into a ranked shortlist
+│   │   ├── outcome.md                 # /outcome record application results, archive materials
+│   │   ├── gmail-sync.md              # /gmail-sync auto-detect application status from Gmail
+│   │   ├── interview.md               # /interview stage-specific prep pack + mock interview
+│   │   ├── html-report.md             # /html-report generate application tracker dashboard
+│   │   ├── notion-sync.md             # /notion-sync one-way pipeline view in a Notion database
+│   │   └── reset.md                   # /reset wipe profile data or documents folder
+│   ├── skills/
+│   │   ├── job-application-assistant/  # Core application skill
+│   │   │   ├── SKILL.md               # Skill definition
+│   │   │   ├── 01-candidate-profile.md # Your education, experience, skills
+│   │   │   ├── 02-behavioral-profile.md# PI/DISC/personality assessment
+│   │   │   ├── 03-writing-style.md    # Tone, structure, do's and don'ts
+│   │   │   ├── 04-job-evaluation.md   # Scoring framework for job fit
+│   │   │   ├── 05-cv-templates.md     # LaTeX CV structure + tailoring rules
+│   │   │   ├── 06-cover-letter-templates.md # LaTeX cover letter templates
+│   │   │   └── 07-interview-prep.md   # STAR examples + interview framework
+│   │   ├── job-scraper/               # Job search orchestration
+│   │   └── upskill/                   # /upskill skill gap analysis and learning plan
+│   └── settings.json                  # Claude Code permissions (shared, scoped)
+├── opencode.json                      # OpenCode command config (bridges to .claude/commands/)
+├── AGENTS.md                          # Thin pointer for non-Claude runtimes
+├── .agents/skills/                    # Job portal CLI tools
+│   ├── jobbank-search/                # Akademikernes Jobbank (Denmark)
+│   ├── jobdanmark-search/             # Jobdanmark.dk (Denmark)
+│   ├── jobindex-search/               # Jobindex.dk (Denmark)
+│   ├── jobnet-search/                 # Jobnet.dk (Denmark, government portal)
+│   ├── linkedin-search/               # LinkedIn public job listings (country-agnostic)
+│   └── freehire-search/               # freehire.me tech job aggregator (multi-market, REST API)
+├── cv/
+│   └── main_example.tex               # moderncv LaTeX template
+├── cover_letters/
+│   ├── cover.cls                      # Custom cover letter LaTeX class
+│   ├── cover_example.tex              # Example cover letter (structural reference + CI smoke test)
+│   └── OpenFonts/                     # Lato + Raleway fonts
+├── templates/                         # Custom templates registered via /add-template
+│   └── README.md                      # Folder layout instructions
+├── documents/                         # Career source materials for /setup Path A and /expand
+│   ├── README.md                      # Folder layout instructions
+│   ├── cv/                            # Master CV (PDF or .tex)
+│   ├── linkedin/                      # LinkedIn profile export (PDF)
+│   ├── diplomas/                      # Degree certificates and transcripts
+│   ├── references/                    # Reference letters
+│   └── applications/                  # Past application records (<company>_<role>/)
+├── .github/workflows/ci.yml           # CI: LaTeX smoke compiles, skill lint, CLI typechecks
+├── salary_lookup.py                   # Salary benchmarking tool (BYO data)
+├── tools/
+│   ├── convert_salary_excel.py        # Convert salary Excel to JSON
+│   ├── lint_skills.py                 # CI lint for skills, commands, settings.json
+│   ├── security_guards.py             # CI guards: permission allowlist, gitignore rules, manifests
+│   └── README_SALARY_TOOL.md          # Salary tool setup instructions
+├── job_scraper/                       # Scraper state (seen jobs, results)
+├── gmail_sync/                        # /gmail-sync state (processed message IDs, last sync date)
+├── upskill/                           # /upskill report output (markdown reports per run)
+├── job_search_tracker.csv             # Application tracking spreadsheet
+└── SETUP.md                           # Detailed setup guide
+```
+
 ## How `/apply` works
 
 <p align="center">
@@ -227,8 +320,25 @@ The `/apply` command runs a **drafter-reviewer workflow** with mandatory PDF com
 
 All claims in the CV and cover letter are verified against your actual profile. The system never fabricates skills or experience.
 
-<details>
-<summary><b>What makes this workflow different</b></summary>
+### Using with OpenCode
+
+This project works with [OpenCode](https://opencode.ai) as an additive alternative to Claude Code. The canonical workflow files live in `.claude/` — OpenCode reads them directly via `{file:...}` references in `opencode.json`, so there is no parallel config tree to maintain.
+
+```bash
+opencode
+# Inside OpenCode:
+/setup
+/scrape
+/apply <job URL or description>
+/rank
+/interview
+```
+
+Commands, prompts, and output contracts are identical. OpenCode just needs one extra file (`opencode.json`) that tells it where to find each workflow. See `AGENTS.md` for the architecture.
+
+> **Note:** The OpenCode `permission` block in `opencode.json` uses a curated allowlist for `bash` commands (matching upstream's `.claude/settings.json` posture). Only workflow-essential commands (`bun run`, `lualatex`, `xelatex`, `pdftotext`, `python salary_lookup.py`) are auto-approved; other commands prompt for confirmation.
+
+### What makes this workflow different
 
 - **PDF verification loop.** Most LaTeX-resume templates produce "looks fine in the .tex" output that breaks in the PDF: job titles orphan to the next page, cover letters spill onto page 2, bullet fonts silently fall back to the body font. The `/apply` command compiles and visually inspects every PDF and applies targeted fixes (`\needspace`, `\enlargethispage`, font-matching wrappers for list items) until the layout is clean. This runs automatically on every application.
 - **ATS verification on the PDF text layer.** An ATS reads the PDF's embedded text, not the rendered page — and LaTeX can silently produce PDFs whose text extracts as garbage (icon glyphs where the email should be, interleaved lines from multi-column layouts). `/apply` extracts the compiled CV's text layer with `pdftotext` and verifies contact details, reading order, and the posting's keyword coverage against what a parser actually sees. Honesty rule enforced: a keyword the profile doesn't support is acknowledged as a gap, never stuffed in.
@@ -281,6 +391,8 @@ Point it at your source file (a `.tex` file plus any `.cls`/`.sty` files or bund
 - `/add-template --use default` reverts to the stock moderncv / cover.cls templates
 
 If you prefer doing it by hand, the manual route still works: update the guidance in `05-cv-templates.md` and `06-cover-letter-templates.md`.
+
+Works the same way in OpenCode — `/add-template` loads the same workflow file.
 
 ### Job search tools
 
