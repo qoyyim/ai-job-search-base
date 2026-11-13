@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Ibnul Qoyyim - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Ibnul}{Qoyyim}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Jakarta Metropolitan Area, Indonesia}{}{}
+\phone[mobile]{+6283830225553}
+\email{qoyyim@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/qoyyim}{LinkedIn}, \href{https://github.com/qoyyim}{GitHub}}
 
 \begin{document}
 \makecvtitle
@@ -137,11 +137,23 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Principal Software Engineer / Architect roles:**
+> Principal Software Engineer and Architect with 15+ years of experience designing and scaling resilient distributed systems across high-traffic platforms (Grab, Bukalapak) and national-scale GovTech (INA Digital Edu). Proven track record leading cloud migrations (cutting infrastructure costs by >50% with zero downtime), modernizing legacy codebases, and integrating applied AI automation into production workflows.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Senior Backend / Cloud Engineer roles:**
+> Senior Backend and Systems Engineer with deep expertise in Golang, Ruby on Rails, PHP/Laravel, and GCP cloud architecture. Specialized in high-throughput API design, database migrations, CI/CD modernization, and building reusable, maintainable libraries that accelerate product delivery.
+
+**For Backend Engineer / Senior Backend Engineer roles:**
+> Principal Backend Engineer with 8+ years building high-throughput distributed systems and cloud backends. Deep expertise in Go (Golang), Ruby on Rails, Redis distributed locking, Apache Kafka, and GCP/AWS, handling peak traffic of 10k–50k+ RPS and processing billions of transactional records. Proven track record delivering payment integrations, KYC platforms, and zero-downtime cloud migrations across e-commerce, fintech, and GovTech.
+
+**For Software Architect / Solutions Architect roles:**
+> Software Architect with 8+ years designing distributed, high-availability systems across e-commerce, fintech, and government digital services. Experienced in cloud cost optimization (50%+ reductions), multi-tenant schema design, and establishing architecture standards for large-scale platforms. Combines hands-on backend engineering (Go, Ruby) with system-level thinking across GCP/AWS, Kafka, and Redis.
+
+**For DevOps / Cloud Engineer roles:**
+> Backend and cloud engineer with 8+ years operating and migrating large-scale systems on GCP and AWS. Led zero-downtime migrations via GCLB traffic mirroring, consolidated shared GCP projects, and cut cloud costs 50%+ by migrating PostgreSQL to GCS. Strong in Docker, CI/CD, infrastructure automation, and high-availability architecture.
+
+**For Web Developer roles:**
+> Full-stack-leaning backend engineer with 8+ years building web platforms in Go, Ruby on Rails, PHP/Laravel, and modern frontend integration. Experienced delivering payment gateways, voucher platforms, and education portals (Ruang Murid) serving 100+ schools. Comfortable across the stack with strong cloud and distributed systems foundations.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
